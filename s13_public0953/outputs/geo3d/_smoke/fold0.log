@@ -1,0 +1,5 @@
+[18:01:57] args {"name": "_smoke", "fold": 0, "epochs": 1, "size": 384, "per_series": 4, "max_series": 7, "bs": 4, "accum": 2, "lr": 5e-05, "lr_head": 0.0004, "wd": 0.05, "gold_w": 5.0, "ema": 0.998, "series_drop": 0.25, "crop_min": 0.75, "coord_shift_mm": 4.0, "coord_scale": 0.05, "no_coords": false, "backbone": "convnext_small.in12k_ft_in1k_384", "crop_mm": 140.0, "head": "mil", "gap": false, "pool": 2, "xattn": 0, "inst_w": 1.0, "inst_w_final": null, "inst_hold_epochs": 4, "warm_steps": 2, "unk_w": 1.0, "unk_teacher": "", "unk_mix": 1.0, "site_csv": "outputs/geo3d/sites.csv", "site_sd": 0.5, "label_csv": "outputs/geo3d/labels_silentfill.csv", "workers": 4, "limit": 16, "val_limit": 8, "quick_val": 8, "val_every": 4, "seed": 0}
+[18:02:01] 画像 /mnt/home/ishikawa/kaggle/RSNA_Knee_Abnormality_Detection/s13_public0953/data/processed/img_train_c140_384
+[18:02:07] 目標と重みを outputs/geo3d/labels_silentfill.csv から: 4349 検査（重みの平均 0.902）
+[18:02:07] train 16 (gold 0) | val 8 (gold 0)
+[18:02:07] 施設のずれ: 24 施設 × 12 所見、事前分布の sd 0.5（Gold 0 検査はずれなし）

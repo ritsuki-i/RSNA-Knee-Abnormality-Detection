@@ -1,0 +1,14 @@
+{
+ "ownerSlug": "ritsuki0720",
+ "modelSlug": "rsna-knee-geo3d",
+ "instanceSlug": "s13full-3s",
+ "framework": "pyTorch",
+ "overview": "geo3d GeoQueryNet weights",
+ "usage": "",
+ "licenseName": "Apache 2.0",
+ "fineTunable": false,
+ "trainingData": [],
+ "modelInstanceType": "Unspecified",
+ "baseModelInstanceId": 0,
+ "externalBaseModelUrl": ""
+}
