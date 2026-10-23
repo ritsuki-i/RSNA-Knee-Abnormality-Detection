@@ -1,1 +1,10 @@
-s13_public0953/data/processed/
+# 大会のデータ（配らない）と、大きいファイル（setup.sh でリンクする・作り直す・Kaggle Models から取る）
+data/raw/
+data/processed/
+data/interim/labeled_studies.csv
+data/interim/dicom_meta_*.csv
+data/interim/geo3d_index_*.pkl
+*.pt
+outputs/working/_weights_dl/
+outputs/geo3d/*/test_local_*.csv
+__pycache__/

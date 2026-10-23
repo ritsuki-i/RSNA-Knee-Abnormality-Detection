@@ -1,0 +1,128 @@
+{
+  "stage": "done",
+  "files": [
+    "geo3d",
+    "geo3d_manifest.json",
+    "model-instance-metadata.json",
+    "r6_run.py",
+    "raptor_run.py",
+    "s13full_s0_fold-1.pt",
+    "s13full_s1_fold-1.pt",
+    "s13full_s2_fold-1.pt"
+  ],
+  "time": "2026-10-22 01:57:29",
+  "out": "4 submissions remaining today.\n",
+  "model_version": 1,
+  "kernel_version": 3,
+  "shape": [
+    3,
+    13
+  ],
+  "valid": true,
+  "preview": [
+    {
+      "StudyInstanceUID": "1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191",
+      "ACL": 0.333,
+      "MCL": 0.75,
+      "Medial Meniscus": 1.0,
+      "Lateral Meniscus": 0.667,
+      "Medial OA": 0.75,
+      "Lateral OA": 0.417,
+      "PF OA": 0.333,
+      "Effusion": 0.667,
+      "Synovitis": 0.5,
+      "Baker's": 1.0,
+      "Contusion": 0.583,
+      "Fracture": 0.333
+    },
+    {
+      "StudyInstanceUID": "1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776",
+      "ACL": 1.0,
+      "MCL": 0.917,
+      "Medial Meniscus": 0.667,
+      "Lateral Meniscus": 0.583,
+      "Medial OA": 0.417,
+      "Lateral OA": 0.833,
+      "PF OA": 1.0,
+      "Effusion": 0.917,
+      "Synovitis": 1.0,
+      "Baker's": 0.667,
+      "Contusion": 1.0,
+      "Fracture": 1.0
+    },
+    {
+      "StudyInstanceUID": "1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402",
+      "ACL": 0.667,
+      "MCL": 0.333,
+      "Medial Meniscus": 0.333,
+      "Lateral Meniscus": 0.75,
+      "Medial OA": 0.833,
+      "Lateral OA": 0.75,
+      "PF OA": 0.667,
+      "Effusion": 0.417,
+      "Synovitis": 0.5,
+      "Baker's": 0.333,
+      "Contusion": 0.417,
+      "Fracture": 0.667
+    }
+  ],
+  "blend_diff": 5.551115123125783e-17,
+  "spearman_vs_others": {
+    "geo3d": 0.8,
+    "o2": 0.838,
+    "raptor": 0.838,
+    "r6": 0.845
+  },
+  "geo3d_vs_ref": 0.0,
+  "raptor_seconds": 31.8,
+  "r6": {
+    "ok": true,
+    "seconds": 393.6,
+    "scored": 3
+  },
+  "r6_preview": [
+    {
+      "ACL": 0.0,
+      "MCL": 0.0,
+      "Medial Meniscus": 1.0,
+      "Lateral Meniscus": 0.0,
+      "Medial OA": 0.846,
+      "Lateral OA": 0.0,
+      "PF OA": 0.003,
+      "Effusion": 0.084,
+      "Synovitis": 0.001,
+      "Baker's": 0.976,
+      "Contusion": 0.0,
+      "Fracture": 0.0
+    },
+    {
+      "ACL": 0.0,
+      "MCL": 0.001,
+      "Medial Meniscus": 1.0,
+      "Lateral Meniscus": 0.0,
+      "Medial OA": 0.983,
+      "Lateral OA": 1.0,
+      "PF OA": 1.0,
+      "Effusion": 0.067,
+      "Synovitis": 0.999,
+      "Baker's": 0.05,
+      "Contusion": 0.008,
+      "Fracture": 0.082
+    },
+    {
+      "ACL": 0.0,
+      "MCL": 0.0,
+      "Medial Meniscus": 0.0,
+      "Lateral Meniscus": 0.0,
+      "Medial OA": 1.0,
+      "Lateral OA": 0.646,
+      "PF OA": 1.0,
+      "Effusion": 0.007,
+      "Synovitis": 0.0,
+      "Baker's": 0.012,
+      "Contusion": 0.0,
+      "Fracture": 0.0
+    }
+  ],
+  "row": "57473665,submission.csv,2026-10-21 08:29:37.023000,\"s13 full-data x3 + saki o2 (10 swa, k30, res320) + nartaa CoAtNet384 + heliosli R6 (flip TTA): equal 1/4 percentile-rank blend per finding\",SubmissionStatus.COMPLETE,0.958,"
+}

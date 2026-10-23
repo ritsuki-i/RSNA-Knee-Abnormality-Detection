@@ -1,0 +1,42 @@
+[14:52:18] args {"name": "s17rank", "fold": 3, "epochs": 4, "size": 384, "per_series": 4, "max_series": 7, "bs": 4, "accum": 2, "lr": 2e-05, "lr_head": 0.0001, "wd": 0.05, "gold_w": 5.0, "ema": 0.998, "series_drop": 0.25, "crop_min": 0.75, "coord_shift_mm": 4.0, "coord_scale": 0.05, "no_coords": false, "backbone": "convnext_small.in12k_ft_in1k_384", "crop_mm": 140.0, "head": "mil", "gap": false, "pool": 2, "xattn": 0, "inst_w": 1.0, "inst_w_final": null, "inst_hold_epochs": 4, "warm_steps": 0, "unk_w": 1.0, "unk_teacher": "", "unk_mix": 1.0, "site_csv": "outputs/geo3d/sites.csv", "site_sd": 0.5, "label_csv": "outputs/geo3d/labels_silentfill.csv", "workers": 8, "limit": 0, "val_limit": 0, "quick_val": 150, "val_every": 99, "rank_w": 0.3, "rank_margin": 0.5, "rank_queue": 256, "init_ckpt": "outputs/geo3d/s13/fold3.pt", "seed": null}
+[14:52:21] 画像 /mnt/home/ishikawa/kaggle/RSNA_Knee_Abnormality_Detection/data/processed/img_train_c140_384
+[14:52:27] 目標と重みを outputs/geo3d/labels_silentfill.csv から: 4349 検査（重みの平均 0.902）
+[14:52:27] train 3526 (gold 43) | val 881 (gold 15)
+[14:52:27] 施設のずれ: 24 施設 × 12 所見、事前分布の sd 0.5（Gold 43 検査はずれなし）
+[14:52:28] 重みを outputs/geo3d/s13/fold3.pt から読み込んだ
+[14:52:28] 施設のずれ b を fold3_site_b.npy から引き継いだ
+[14:52:29] ep0 instance_weight 1.000000
+[14:58:44] ep0 it200/881 loss 0.6739 375s mem 7.3G
+[15:00:56] ep0 it400/881 loss 0.6829 507s mem 7.3G
+[15:03:08] ep0 it600/881 loss 0.6865 639s mem 7.3G
+[15:05:18] ep0 it800/881 loss 0.6851 769s mem 7.3G
+[15:06:13] ep0 done loss 0.6858 824s rank 0.1032
+[15:06:16] ep0 施設のずれ b: 所見ごとの SD {'ACL': 0.10999999940395355, 'MCL': 0.09399999678134918, 'Medial Meniscus': 0.08799999952316284, 'Lateral Meniscus': 0.0820000022649765, 'Medial OA': 0.09600000083446503, 'Lateral OA': 0.10400000214576721, 'PF OA': 0.11800000071525574, 'Effusion': 0.11999999731779099, 'Synovitis': 0.1509999930858612, "Baker's": 0.08299999684095383, 'Contusion': 0.08100000023841858, 'Fracture': 0.07100000232458115}
+[15:06:16] ep1 instance_weight 1.000000
+[15:08:30] ep1 it200/881 loss 0.6755 135s mem 7.3G
+[15:10:43] ep1 it400/881 loss 0.6778 268s mem 7.3G
+[15:12:55] ep1 it600/881 loss 0.6753 399s mem 7.3G
+[15:15:06] ep1 it800/881 loss 0.6770 530s mem 7.3G
+[15:15:58] ep1 done loss 0.6779 583s rank 0.0907
+[15:16:02] ep1 施設のずれ b: 所見ごとの SD {'ACL': 0.10999999940395355, 'MCL': 0.0949999988079071, 'Medial Meniscus': 0.08900000154972076, 'Lateral Meniscus': 0.0820000022649765, 'Medial OA': 0.09700000286102295, 'Lateral OA': 0.10400000214576721, 'PF OA': 0.11900000274181366, 'Effusion': 0.12099999934434891, 'Synovitis': 0.1509999930858612, "Baker's": 0.08299999684095383, 'Contusion': 0.08100000023841858, 'Fracture': 0.07100000232458115}
+[15:16:02] ep2 instance_weight 1.000000
+[15:18:13] ep2 it200/881 loss 0.6789 131s mem 7.3G
+[15:20:26] ep2 it400/881 loss 0.6678 264s mem 7.3G
+[15:22:37] ep2 it600/881 loss 0.6608 395s mem 7.3G
+[15:24:49] ep2 it800/881 loss 0.6596 527s mem 7.3G
+[15:25:42] ep2 done loss 0.6616 581s rank 0.0788
+[15:25:45] ep2 施設のずれ b: 所見ごとの SD {'ACL': 0.11100000143051147, 'MCL': 0.0949999988079071, 'Medial Meniscus': 0.08900000154972076, 'Lateral Meniscus': 0.0820000022649765, 'Medial OA': 0.09700000286102295, 'Lateral OA': 0.10400000214576721, 'PF OA': 0.11900000274181366, 'Effusion': 0.12099999934434891, 'Synovitis': 0.1509999930858612, "Baker's": 0.08399999886751175, 'Contusion': 0.08100000023841858, 'Fracture': 0.07100000232458115}
+[15:25:45] ep3 instance_weight 1.000000
+[15:27:58] ep3 it200/881 loss 0.6501 133s mem 7.3G
+[15:30:11] ep3 it400/881 loss 0.6525 266s mem 7.3G
+[15:32:22] ep3 it600/881 loss 0.6551 397s mem 7.3G
+[15:34:32] ep3 it800/881 loss 0.6475 528s mem 7.3G
+[15:35:26] ep3 done loss 0.6489 581s rank 0.0690
+[15:35:29] ep3 施設のずれ b: 所見ごとの SD {'ACL': 0.11100000143051147, 'MCL': 0.0949999988079071, 'Medial Meniscus': 0.08900000154972076, 'Lateral Meniscus': 0.0820000022649765, 'Medial OA': 0.09700000286102295, 'Lateral OA': 0.10400000214576721, 'PF OA': 0.11900000274181366, 'Effusion': 0.12099999934434891, 'Synovitis': 0.1509999930858612, "Baker's": 0.08399999886751175, 'Contusion': 0.08100000023841858, 'Fracture': 0.07100000232458115}
+[15:35:29] OOF 推論（全スライス）
+[15:37:30]   predict 200/881 121s
+[15:39:08]   predict 400/881 219s
+[15:40:47]   predict 600/881 317s
+[15:42:28]   predict 800/881 419s
+[15:43:12] OOF fold3 {"study": {"gold": 0.892624828874829, "n_gold": 15, "clear": 0.959519266309639}, "inst": {"gold": 0.8709172771672771, "n_gold": 15, "clear": 0.931640693935048}, "mix": {"gold": 0.9064384226884227, "n_gold": 15, "clear": 0.9590581518444811}}
+[15:43:12] done

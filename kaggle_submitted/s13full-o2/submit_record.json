@@ -1,0 +1,68 @@
+{
+  "stage": "done",
+  "files": [
+    "geo3d",
+    "geo3d_manifest.json",
+    "model-instance-metadata.json",
+    "s13full_s0_fold-1.pt",
+    "s13full_s1_fold-1.pt",
+    "s13full_s2_fold-1.pt"
+  ],
+  "time": "2026-10-19 07:57:52",
+  "out": "3 submissions remaining today.\n",
+  "model_version": 1,
+  "kernel_version": 14,
+  "shape": [
+    3,
+    13
+  ],
+  "valid": true,
+  "preview": [
+    {
+      "StudyInstanceUID": "1.2.826.0.1.3680043.8.498.10047035057544427318018579121635276191",
+      "ACL": 0.017,
+      "MCL": 0.046,
+      "Medial Meniscus": 0.934,
+      "Lateral Meniscus": 0.035,
+      "Medial OA": 0.533,
+      "Lateral OA": 0.158,
+      "PF OA": 0.189,
+      "Effusion": 0.131,
+      "Synovitis": 0.128,
+      "Baker's": 0.87,
+      "Contusion": 0.032,
+      "Fracture": 0.031
+    },
+    {
+      "StudyInstanceUID": "1.2.826.0.1.3680043.8.498.10062861783145312629332250977456991776",
+      "ACL": 0.056,
+      "MCL": 0.047,
+      "Medial Meniscus": 0.845,
+      "Lateral Meniscus": 0.037,
+      "Medial OA": 0.417,
+      "Lateral OA": 0.246,
+      "PF OA": 0.926,
+      "Effusion": 0.277,
+      "Synovitis": 0.495,
+      "Baker's": 0.044,
+      "Contusion": 0.143,
+      "Fracture": 0.194
+    },
+    {
+      "StudyInstanceUID": "1.2.826.0.1.3680043.8.498.10067514707072572280263481548497591402",
+      "ACL": 0.019,
+      "MCL": 0.028,
+      "Medial Meniscus": 0.131,
+      "Lateral Meniscus": 0.038,
+      "Medial OA": 0.639,
+      "Lateral OA": 0.233,
+      "PF OA": 0.832,
+      "Effusion": 0.126,
+      "Synovitis": 0.243,
+      "Baker's": 0.025,
+      "Contusion": 0.029,
+      "Fracture": 0.043
+    }
+  ],
+  "row": "57366376,submission.csv,2026-10-18 19:21:31.860000,\"s13 full-data x3 seeds + saki o2 (10 swa, k30, res320) equal-weight\",SubmissionStatus.COMPLETE,0.954,"
+}

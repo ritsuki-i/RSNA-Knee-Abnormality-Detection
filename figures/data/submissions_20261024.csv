@@ -1,0 +1,74 @@
+ref,fileName,date,description,status,publicScore,privateScore
+57540735,submission.csv,2026-10-22 23:22:00.467000,"geo3d s17full seed1 + o2_seed1 (CoAtNet, gold_w3, 5 swa, k30 res384): per-finding equal percentile-rank blend; no R6/raptor",SubmissionStatus.COMPLETE,0.953,0.940
+57540421,submission.csv,2026-10-22 23:03:42.033000,"geo3d s17full seed1 + G0 (o2-type CoAtNet, gold_w0, 5 swa, k30 res384): per-finding equal percentile-rank blend; no R6/raptor",SubmissionStatus.COMPLETE,0.953,0.940
+57540133,submission.csv,2026-10-22 22:47:28.620000,"geo3d: s17full seed1 + full_rank ep4 (s17full_s0 + 4ep FT, teacher v3 mask+attr_fix+multi-source synovitis fill, restricted pairwise rank loss .3, step lr), logit mean of 2 models; no o2/R6",SubmissionStatus.COMPLETE,0.950,0.939
+57531043,submission.csv,2026-10-22 16:07:37.427000,"s17 full-data x3 + saki o2 (10 swa, k30, res320) + nartaa CoAtNet384: equal 1/3 percentile-rank blend for all 12 findings",SubmissionStatus.COMPLETE,0.956,0.941
+57526262,submission.csv,2026-10-22 13:25:53.353000,geo3d s17 = s13 full-data x3 + 4ep fine-tune with pairwise rank loss 0.3 (crop0.93),SubmissionStatus.COMPLETE,0.951,0.939
+57495948,submission.csv,2026-10-21 20:06:49.047000,"s13 full-data x3 + saki o2 + nartaa CoAtNet384 + heliosli R6 (flip TTA): per-finding weighted percentile-rank blend, w from Gold58 AUC (w∝AUC-0.5, shrunk 50% to 1/4; s13=5fold OOF)",SubmissionStatus.COMPLETE,0.957,0.944
+57482007,submission.csv,2026-10-21 12:38:49.467000,"geo3d s13 full-data x3 seeds, per-finding study/slice-head mix tuned on Gold58 OOF (Synovitis=slice head)",SubmissionStatus.COMPLETE,0.952,0.939
+57476015,submission.csv,2026-10-21 09:39:23.287000,s13 full-data x3 + heliosli R6 (flip TTA): equal 1/2 percentile-rank blend per finding,SubmissionStatus.COMPLETE,0.957,0.945
+57473665,submission.csv,2026-10-21 08:29:37.023000,"s13 full-data x3 + saki o2 (10 swa, k30, res320) + nartaa CoAtNet384 + heliosli R6 (flip TTA): equal 1/4 percentile-rank blend per finding",SubmissionStatus.COMPLETE,0.958,0.944
+57412743,submission.csv,2026-10-19 23:45:21.980000,"S4 retry (same kernel v2): R6 (heliosli w1, flip TTA) + o2 (S3 10 swa, k30, res320), per-finding 50:50 rank blend; first run threw exception on hidden test",SubmissionStatus.COMPLETE,,
+57388426,submission.csv,2026-10-19 07:48:51.980000,"S5: Raptor384/224 (0.65/0.35) + R6 (flip TTA) + o2 (5 of S3 swa seed0, k30, res320), equal 1/3 rank blend",SubmissionStatus.COMPLETE,0.958,0.943
+57388410,submission.csv,2026-10-19 07:48:20.183000,"S4: R6 (heliosli w1, flip TTA) + o2 (S3 10 swa, k30, res320), per-finding 50:50 rank blend; control 57319940",SubmissionStatus.COMPLETE,,
+57381683,submission.csv,2026-10-19 04:16:16.833000,"s13 full-data x3 seeds + saki o2 (10 swa, k30, res320) equal-weight; all 12 findings: 0.5 rank blend with nartaa public CoAtNet384 (OAI-supervised)",SubmissionStatus.COMPLETE,0.955,0.940
+57368467,submission.csv,2026-10-18 20:45:19.380000,"geo3d s13 full-data x3 seeds (no CV, crop0.93)",SubmissionStatus.COMPLETE,0.953,0.940
+57366376,submission.csv,2026-10-18 19:21:31.860000,"s13 full-data x3 seeds + saki o2 (10 swa, k30, res320) equal-weight",SubmissionStatus.COMPLETE,0.954,0.942
+57366315,submission.csv,2026-10-18 19:19:16.823000,"s13 + saki o2 (10 swa, k30, res320) equal-weight; Synovitis only: 0.5 rank blend with nartaa public CoAtNet384 (OAI-supervised)",SubmissionStatus.COMPLETE,0.954,0.941
+57323180,submission.csv,2026-10-17 19:16:44.307000,"s13 + saki o2 (10 swa, k30, res320) equal-weight",SubmissionStatus.COMPLETE,0.953,0.940
+57319940,submission.csv,2026-10-17 17:23:58.207000,Uniform 50:50 Raptor/R6 control; only per-finding weight overrides removed; A224=0.35 unchanged,SubmissionStatus.COMPLETE,0.957,0.941
+57318672,submission.csv,2026-10-17 16:45:27.690000,Unmodified user-copy Top1 / RSNA Gold reproduction; identical executable source,SubmissionStatus.COMPLETE,0.958,0.942
+57296480,submission.csv,2026-10-17 05:17:40.177000,"s11 + saki o2 (latest = S3: 10 swa, k30, 320 center crop) equal-weight",SubmissionStatus.COMPLETE,0.952,0.939
+57277278,submission.csv,2026-10-16 17:20:55.600000,"S3: P3 10 swa (o2 seed0/1), k30, inference 320 center crop native",SubmissionStatus.COMPLETE,0.949,0.934
+57276802,submission.csv,2026-10-16 17:05:27.287000,"S2: P3 10 swa (o2 seed0/1) + G0 5 swa = 15 models mean, k30, 384",SubmissionStatus.COMPLETE,,
+57276570,submission.csv,2026-10-16 16:57:27.190000,"S1: o2 recipe (v6 ordinal+rank0.3) gold w0, 5-fold swa mean, k30, 384",SubmissionStatus.COMPLETE,0.947,0.933
+57232019,submission.csv,2026-10-15 13:27:17.443000,"s11 + saki o2 (v13, k30, 10 swa split over 2 GPUs) equal-weight",SubmissionStatus.COMPLETE,0.952,0.939
+57231572,submission.csv,2026-10-15 13:12:30.047000,"s9 + saki o2 (v13, k30, 10 swa split over 2 GPUs) per-finding weights (clear3)",SubmissionStatus.COMPLETE,0.951,0.939
+57226112,submission.csv,2026-10-15 10:10:45.280000,"geo3d s11 5fold (s9 + silent-cell fill for PF OA/Contusion/Fracture, crop0.93)",SubmissionStatus.COMPLETE,0.949,0.935
+57215044,submission.csv,2026-10-15 03:42:23.427000,"s9 + saki o2 (v13, k30) per-finding weights (clear3-fitted)",SubmissionStatus.COMPLETE,,
+57178683,submission.csv,2026-10-14 10:17:01.887000,"geo3d s9 5fold (s7 + consensus labels, crop0.93)",SubmissionStatus.COMPLETE,0.948,0.934
+57157282,submission.csv,2026-10-13 22:05:51.843000,"geo3d s7+s8 equal-weight ensemble (small c140 + tiny consensus labels, crop0.87)",SubmissionStatus.COMPLETE,0.946,0.934
+57154760,submission.csv,2026-10-13 19:49:48.893000,"geo3d s8 5fold (s4 + consensus labels mix0.5 w>=0.5, crop0.87)",SubmissionStatus.COMPLETE,0.943,0.931
+57140602,submission.csv,2026-10-13 10:53:57.390000,"geo3d s7 5fold (small, c140, 16ep, crop0.93)",SubmissionStatus.COMPLETE,0.945,0.932
+57118853,submission.csv,2026-10-12 21:06:58.083000,"geo3d s4+s6 equal-weight ensemble (tiny5+small5, crop0.87)",SubmissionStatus.COMPLETE,0.943,0.930
+57114805,submission.csv,2026-10-12 17:47:14.970000,"geo3d s6 5fold (small, 16ep, 6x6 tokens, crop0.87)",SubmissionStatus.COMPLETE,0.942,0.930
+57112302,submission.csv,2026-10-12 15:58:55.483000,"P5 (resubmit): v14 labels (v6 grades + competition-correspondence term, pre-14b) full-data single swa, k30",SubmissionStatus.COMPLETE,0.943,0.928
+57112172,submission.csv,2026-10-12 15:53:08.250000,"P6: v6 labels full-data single swa, k30 (same-condition control for P5)",SubmissionStatus.COMPLETE,0.947,0.931
+57091712,submission.csv,2026-10-12 01:52:53.003000,"geo3d s4+s2 equal-weight ensemble (10 models, crop0.87)",SubmissionStatus.COMPLETE,0.939,0.926
+57087771,submission.csv,2026-10-11 23:35:19.747000,"geo3d s4 5fold (16ep, 6x6 tokens, crop0.87)",SubmissionStatus.COMPLETE,0.941,0.928
+57079265,submission.csv,2026-10-11 16:05:25.167000,"geo3d s2+s3 equal-weight ensemble (10 models, crop0.87)",SubmissionStatus.COMPLETE,0.924,0.913
+57078985,submission.csv,2026-10-11 15:54:21.447000,"geo3d s3 5fold (10ep, UNK weight 0.3, crop0.87)",SubmissionStatus.COMPLETE,0.921,0.910
+57076019,submission.csv,2026-10-11 13:52:58.937000,"P4: nartaa public backbone init + v6 ordinal+rank0.3 gold w3 no pseudo, 5-fold swa mean, k30",SubmissionStatus.COMPLETE,0.947,0.934
+57065494,submission.csv,2026-10-11 06:53:48,"geo3d s2 5fold (stable recipe, 10ep, study head)",SubmissionStatus.COMPLETE,0.926,0.915
+57062299,submission.csv,2026-10-11 04:34:18.097000,"P3: o2 (v6, ordinal+rank0.3, gold w3, no pseudo) seed0+seed1 x 5-fold swa mean (10 weights), k30",SubmissionStatus.COMPLETE,0.948,0.933
+57059455,submission.csv,2026-10-11 02:20:18.343000,"geo3d s1 5fold (study head, center-crop 0.87 TTA)",SubmissionStatus.COMPLETE,0.911,0.899
+57054962,submission.csv,2026-10-10 23:50:57.033000,"geo3d s1 5fold (stable recipe, study head)",SubmissionStatus.COMPLETE,0.908,0.896
+57047131,submission.csv,2026-10-10 16:08:58.017000,"efficiency probe: single o2 fold0 swa, k12, fp16 (time + AUC data point)",SubmissionStatus.COMPLETE,0.943,0.928
+57046438,submission.csv,2026-10-10 15:43:52.290000,"geo3d g2 5fold (MIL+coords, slice aux, mix0.5)",SubmissionStatus.COMPLETE,0.867,0.849
+57043771,submission.csv,2026-10-10 13:41:23.603000,"geo3d g2 5fold (MIL+coords, slice aux, study head)",SubmissionStatus.COMPLETE,0.873,0.858
+57036633,submission.csv,2026-10-10 08:26:47.650000,"geo3d g2 fold0 (MIL+coords, slice aux, mix0.5)",SubmissionStatus.COMPLETE,0.886,0.871
+57033944,submission.csv,2026-10-10 06:46:02.620000,"geo3d p0 fold0 (partial data, decoder head) pipeline check",SubmissionStatus.COMPLETE,0.674,0.621
+57027174,submission.csv,2026-10-10 01:33:02.463000,"P2: ordinal+rank0.3, silent masked (no pseudo labels), 5-fold swa mean, k30",SubmissionStatus.COMPLETE,0.948,0.933
+57013818,submission.csv,2026-10-09 15:42:58.423000,"o4 single model trained on all data (ordinal+rank+pseudo), swa, k30",SubmissionStatus.COMPLETE,0.943,0.929
+56993165,submission.csv,2026-10-09 05:22:32.407000,"Standalone dense OrthoFoundation + CoPAS-style slot head, Gold58-calibrated labels + Gold58 x5 in training",SubmissionStatus.COMPLETE,0.890,0.880
+56991591,submission.csv,2026-10-09 04:41:45.633000,"Standalone dense OrthoFoundation (5 slots x 20 slices, 7x7) + CoPAS-style slot fusion head, mixed labels",SubmissionStatus.COMPLETE,0.888,0.876
+56990080,submission.csv,2026-10-09 04:03:42.217000,"o4 ordinal regression + pairwise rank 0.3 + pseudo labels on masked, 5-fold swa mean, k24",SubmissionStatus.COMPLETE,0.946,0.932
+56962340,submission.csv,2026-10-08 16:22:37.457000,Equal-weight rank ensemble: public D4 + CoAtNet384 mirror + CoAtNet224 crop + ConvNeXt reader,SubmissionStatus.COMPLETE,0.950,0.934
+56956689,submission.csv,2026-10-08 13:50:07.433000,Equal-weight rank ensemble: public CoAtNet384 mirror + CoAtNet224 crop + ConvNeXt reader,SubmissionStatus.COMPLETE,0.949,0.933
+56948500,submission.csv,2026-10-08 10:11:21.330000,Attributed public Apex CoAtNet + ConvNeXt reproduction,SubmissionStatus.COMPLETE,0.950,0.932
+56935617,submission.csv,2026-10-08 05:00:50.197000,"v3 graded labels, 5-fold mean, k24",SubmissionStatus.COMPLETE,0.940,0.927
+56925534,submission.csv,2026-10-08 00:09:43.627000,Standalone localized OrthoFoundation mixed pseudo-label model,SubmissionStatus.COMPLETE,0.878,0.866
+56925526,submission.csv,2026-10-08 00:09:29.633000,Standalone localized OrthoFoundation mixed pseudo-label model,SubmissionStatus.COMPLETE,0.878,0.866
+56908674,submission.csv,2026-10-07 10:51:06.443000,"v3 grade-calibrated labels (Claude read all 4349 reports), coatnet fold0, k24",SubmissionStatus.COMPLETE,0.932,0.920
+56842363,submission.csv,2026-10-05 04:32:14.590000,"b1 self-train (silent cells 50/50 with OOF) coatnet fold0, k24 (clear-label AUC 0.914)",SubmissionStatus.COMPLETE,0.923,0.904
+56790288,submission.csv,2026-10-03 05:25:26.740000,"r1 raptor-recipe coatnet 5-fold mean, k6 (OOF clear 0.908, gold58 0.899)",SubmissionStatus.COMPLETE,0.930,0.915
+56782331,submission.csv,2026-10-02 21:03:16.723000,"r3 raptor-recipe coatnet fold0 k6, labels v2 (clear-label AUC 0.907)",SubmissionStatus.COMPLETE,0.924,0.909
+56778378,submission.csv,2026-10-02 16:51:41.070000,r1 raptor-recipe coatnet fold0 k6 (clear-label AUC 0.908),SubmissionStatus.COMPLETE,0.920,0.904
+56765939,submission.csv,2026-10-02 04:48:29.787000,b1_base fold0 convnext_small (clear-label AUC 0.784) - pipeline check,SubmissionStatus.COMPLETE,0.801,0.774
+56765657,submission.csv,2026-10-02 04:30:43.317000,D4 plus OrthoFoundation Steven v4 independent weak-label blend,SubmissionStatus.COMPLETE,0.943,0.927
+56750880,submission.csv,2026-10-01 12:22:37.783000,D4 plus ConvNeXt6 plus OrthoFoundation MRI pretrained OOF-gated blend,SubmissionStatus.COMPLETE,,
+56748844,submission.csv,2026-10-01 09:56:38.023000,D4 plus dual epoch ConvNeXt rank blend 25 percent 3ep 75 percent 6ep,SubmissionStatus.COMPLETE,0.940,0.924
+56746745,submission.csv,2026-10-01 07:48:39.883000,D4 plus 6epoch audited ConvNeXt OOF-gated blend,SubmissionStatus.COMPLETE,0.940,0.925
+56742147,submission.csv,2026-10-01 03:07:05.317000,D4 0943 plus audited ConvNeXt; direct checkpoint path for hidden inference,SubmissionStatus.COMPLETE,0.941,0.925
+56741942,submission.csv,2026-10-01 02:57:55.430000,D4 public 0943 plus audited ConvNeXt 5fold Gold58 OOF per-label blend,SubmissionStatus.COMPLETE,,
+56716419,submission.csv,2026-09-30 18:58:58.557000,D4 public 0946 reproduction; audited full ensemble,SubmissionStatus.COMPLETE,0.943,0.927

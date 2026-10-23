@@ -1,0 +1,23 @@
+{
+ "id": "ritsuki0720/rsna-knee-s17-o2-raptor-equal3",
+ "title": "rsna-knee-s17-o2-raptor-equal3",
+ "code_file": "geo3d_infer.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_tpu": false,
+ "enable_internet": false,
+ "competition_sources": [
+  "rsna-knee-abnormality-detection"
+ ],
+ "dataset_sources": [
+  "ritsuki0720/rsna-knee-team-o2-latest",
+  "nartaa/rsna-knee-publication-swa-weights-20261007"
+ ],
+ "kernel_sources": [],
+ "model_sources": [
+  "ritsuki0720/rsna-knee-geo3d/pytorch/s17full-eq3/1"
+ ],
+ "machine_shape": "NvidiaTeslaT4"
+}
