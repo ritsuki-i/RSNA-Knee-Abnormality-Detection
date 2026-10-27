@@ -14,7 +14,7 @@
 
 ![順位](figures/スクリーンショット%202026-10-28%20010609.png)
 
-![修了証](figures/Ritsuki%20Ishikawa%20-%20RSNA%20Knee%20Abnormality%20Detection.png)
+![修了証](figures/スクリーンショット%202026-10-28%20010649.png)
 
 ## このリポジトリ
 
