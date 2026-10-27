@@ -1,7 +1,24 @@
-# geo3d s13 / s17 一式（s13 全データ版 public 0.953 / private 0.940）
+# RSNA Knee Abnormality Detection — geo3d s13 / s17 一式
+
+## 結果
+
+| 項目 | 内容 |
+|---|---|
+| コンペ | [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)（膝 MRI の 12 所見、macro AUC） |
+| チーム | Ohara Lab（2 人） |
+| 順位 | **228 位 / 6,300 チーム（銀メダル）** |
+| 最終スコア | **public 0.958 / private 0.944**（提出 `57473665`: s13 全データ × 3 + o2 + nartaa + R6 の順位等重み） |
+| 最終選択のもう 1 本 | public 0.956 / private 0.941（提出 `57531043`: s17 全データ × 3 + o2 + nartaa の順位等重み） |
+| 自前モデル単体 | geo3d s13 全データ版 public 0.953 / private 0.940 |
+| 解法 | [`COMPETITION_SUMMARY.md`](COMPETITION_SUMMARY.md)（経緯・工夫・スコアの推移・public と private） |
+
+![順位](figures/スクリーンショット%202026-10-28%20010609.png)
+
+![修了証](figures/Ritsuki%20Ishikawa%20-%20RSNA%20Knee%20Abnormality%20Detection.png)
+
+## このリポジトリ
 
 自前モデル geo3d の最終形 s13 と、その追加学習版 s17 の重み・学習コード・提出 notebook。
-**コンペ全体の経緯と知見は [`COMPETITION_SUMMARY.md`](COMPETITION_SUMMARY.md)** にまとめた。
 
 - s13: 全データ（4,407 件、Gold58 を含む）で seed 0〜2 の 3 本を学習し、3 本のロジットを平均したもの。提出 `57368467`（2026-10-18）で **public 0.953 / private 0.940**。自前モデルの単体で最高。同じ設定の 5 fold 版は Gold58 OOF 0.919。
 - s17: s13 の重みから順位損失を足して 4 エポック追加で学習したもの。全データ版の単体 `57526262` は public 0.951 / private 0.939。5 fold 版は Gold58 OOF 0.9226。詳しくは [`outputs/geo3d/S17_README.md`](outputs/geo3d/S17_README.md)。
